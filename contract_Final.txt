@@ -1,0 +1,36 @@
+pragma solidity ^0.4.22;                                                                        
+contract Virtual_Clothes_Factory {                                                              
+address public Leader;                                                                          
+address public Designer;                                                                        
+address public Factory;                                                                         
+address public Seller;                                                                          
+enum State { Node1,Node2,Node3,Node4,Node5,Node6,Node7,Node8} State public state;               
+                                                                                                
+constructor() public payable { Leader = msg.sender; }                                           
+                                                                                                
+modifier condition(bool _condition) { require(_condition);  _; }                                
+modifier onlyLeader() { require( msg.sender == Leader, 'Only Leader can call this.' ); _;}      
+modifier onlyDesigner() { require( msg.sender == Designer, 'Only Designer can call this.' ); _;}
+modifier onlyFactory() { require( msg.sender == Factory, 'Only Factory can call this.' ); _;}   
+modifier onlySeller() { require( msg.sender == Seller, 'Only Seller can call this.' ); _;}      
+modifier inState(State _state) { require( state == _state, 'Not your node stage.');  _; }       
+                                                                                                
+function confirm_Designer() public payable{ Designer = msg.sender; }                            
+function confirm_Factory() public payable{ Factory = msg.sender; }                              
+function confirm_Seller() public payable{ Seller = msg.sender; }                                
+                                                                                                
+function Node1_succeed() public onlyDesigner inState(State.Node1) { state = State.Node2; }      
+function Node1_fail() public onlyDesigner inState(State.Node1) { state = State.Node1; }         
+function Node2_succeed() public onlyLeader inState(State.Node2) { state = State.Node3; }        
+function Node2_fail() public onlyLeader inState(State.Node2) { state = State.Node1; }           
+function Node3_succeed() public onlyFactory inState(State.Node3) { state = State.Node4; }       
+function Node3_fail() public onlyFactory inState(State.Node3) { state = State.Node1; }          
+function Node4_succeed() public onlyFactory inState(State.Node4) { state = State.Node5; }       
+function Node4_fail() public onlyFactory inState(State.Node4) { state = State.Node4; }          
+function Node5_succeed() public onlySeller inState(State.Node5) { state = State.Node6; }        
+function Node5_fail() public onlySeller inState(State.Node5) { state = State.Node4; }           
+function Node6_succeed() public onlySeller inState(State.Node6) { state = State.Node7; }        
+function Node6_fail() public onlySeller inState(State.Node6) { state = State.Node6; }           
+function Node7_succeed() public onlyLeader inState(State.Node7) { state = State.Node8; }        
+function Node7_fail() public onlyLeader inState(State.Node7) { state = State.Node7; }           
+}                                                                                               
