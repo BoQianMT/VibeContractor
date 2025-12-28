@@ -4,6 +4,22 @@ The framework generates executable Ethereum smart contract code based on structu
 All operations are executed through `CodeGenerate.m`.  
 Other MATLAB scripts are automatically invoked as functional sub-modules.
 
+## Repository Structure
+CodeGenerate.m Main MATLAB entry file
+contract_Final.txt Generated smart contract code (output)
+
+Generate_Confirm.m Sub-module: confirmation logic
+Generate_Construct.m Sub-module: constructor generation
+Generate_Name.m Sub-module: contract name generation
+Generate_Node.m Sub-module: node/state generation
+Generate_Only.m Sub-module: standalone generation logic
+Generate_Roles.m Sub-module: role definition generation
+Generate_State.m Sub-module: state-transition logic
+
+Name.txt Smart contract name definition
+Roles.txt Role definitions
+Table.txt Node/state transition table
+
 ## Usage Instructions
 ### Step 1: Prepare Input Files
 According to the formatted input data described in the manuscript, modify and save the following files:
