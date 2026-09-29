@@ -1,0 +1,904 @@
+id,domain,run,tier,latency_s,schema_valid,exact_match,rollback_acc,hallucination,reason,reply
+B01,apparel,1,quick,2.07,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Printed_TShirts_Factory"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""leader"", ""designer"", ""printer"", ""seller""],
+  ""node_matrix"": [
+    [1, ""leader"", 1],
+    [2, ""designer"", 2],
+    [3, ""printer"", 3],
+    [4, ""seller"", 3],
+    [5, ""seller"", 5],
+    [6, ""leader"", 6]
+  ]
+}
+```"
+B01,apparel,2,quick,1.72,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Printed_T_Shirts"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""leader"", ""designer"", ""printer"", ""seller""],
+  ""node_matrix"": [
+    [1, ""leader"", 1],
+    [2, ""designer"", 2],
+    [3, ""printer"", 3],
+    [4, ""seller"", 3],
+    [5, ""seller"", 5],
+    [6, ""leader"", 6]
+  ]
+}
+```"
+B01,apparel,3,quick,1.49,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Printed_T_Shirts_Factory"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""leader"", ""designer"", ""printer"", ""seller""],
+  ""node_matrix"": [
+    [1, ""leader"", 1],
+    [2, ""designer"", 2],
+    [3, ""printer"", 3],
+    [4, ""seller"", 3],
+    [5, ""seller"", 5],
+    [6, ""leader"", 6]
+  ]
+}
+```"
+B02,furniture,1,quick,1.71,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Custom_Oak_Table"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Designer"", ""Supplier"", ""Carpenter"", ""Painter"", ""Inspector""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Designer"", 2],
+    [3, ""Leader"", 2],
+    [4, ""Supplier"", 4],
+    [5, ""Carpenter"", 4],
+    [6, ""Carpenter"", 6],
+    [7, ""Painter"", 7],
+    [8, ""Inspector"", 7],
+    [9, ""Leader"", 9]
+  ]
+}
+```"
+B02,furniture,2,quick,1.85,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Custom_Oak_Table_Factory"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""leader"", ""designer"", ""supplier"", ""carpenter"", ""painter"", ""inspector""],
+  ""node_matrix"": [
+    [1, ""leader"", 1],
+    [2, ""designer"", 2],
+    [3, ""leader"", 2],
+    [4, ""supplier"", 4],
+    [5, ""carpenter"", 4],
+    [6, ""carpenter"", 6],
+    [7, ""painter"", 7],
+    [8, ""inspector"", 7],
+    [9, ""leader"", 9]
+  ]
+}
+```"
+B02,furniture,3,quick,1.65,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Custom_Oak_Table_Factory"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Designer"", ""Supplier"", ""Carpenter"", ""Painter"", ""Inspector""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Designer"", 2],
+    [3, ""Leader"", 2],
+    [4, ""Supplier"", 4],
+    [5, ""Carpenter"", 4],
+    [6, ""Carpenter"", 6],
+    [7, ""Painter"", 7],
+    [8, ""Inspector"", 7],
+    [9, ""Leader"", 9]
+  ]
+}
+```"
+B03,electronics,1,quick,1.58,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Sensor_Module_Manufacturing"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Supplier"", ""Assembler"", ""Tester"", ""Packer""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Supplier"", 2],
+    [3, ""Assembler"", 3],
+    [4, ""Tester"", 3],
+    [5, ""Packer"", 5],
+    [6, ""Leader"", 6]
+  ]
+}
+```"
+B03,electronics,2,quick,1.70,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Sensor_Modules_Manufacturing"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Supplier"", ""Assembler"", ""Tester"", ""Packer""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Supplier"", 2],
+    [3, ""Assembler"", 3],
+    [4, ""Tester"", 3],
+    [5, ""Packer"", 5],
+    [6, ""Leader"", 6]
+  ]
+}
+```"
+B03,electronics,3,quick,1.61,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Sensor_Module_Manufacturing"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Supplier"", ""Assembler"", ""Tester"", ""Packer""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Supplier"", 2],
+    [3, ""Assembler"", 3],
+    [4, ""Tester"", 3],
+    [5, ""Packer"", 5],
+    [6, ""Leader"", 6]
+  ]
+}
+```"
+B04,ceramics,1,quick,2.67,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Custom_Ceramic_Cups_Factory"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""leader"", ""designer"", ""factory"", ""printer"", ""seller""],
+  ""node_matrix"": [
+    [1, ""leader"", 1],
+    [2, ""designer"", 2],
+    [3, ""leader"", 2],
+    [4, ""factory"", 4],
+    [5, ""printer"", 5],
+    [6, ""seller"", 5],
+    [7, ""seller"", 7],
+    [8, ""leader"", 8]
+  ]
+}
+```"
+B04,ceramics,2,quick,1.89,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Custom_Ceramic_Cups_Factory"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Designer"", ""Factory"", ""Printer"", ""Seller""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Designer"", 2],
+    [3, ""Leader"", 2],
+    [4, ""Factory"", 4],
+    [5, ""Printer"", 5],
+    [6, ""Seller"", 5],
+    [7, ""Seller"", 7],
+    [8, ""Leader"", 8]
+  ]
+}
+```"
+B04,ceramics,3,quick,1.56,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Custom_Ceramic_Cups_Factory"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""leader"", ""designer"", ""factory"", ""printer"", ""seller""],
+  ""node_matrix"": [
+    [1, ""leader"", 1],
+    [2, ""designer"", 2],
+    [3, ""leader"", 2],
+    [4, ""factory"", 4],
+    [5, ""printer"", 5],
+    [6, ""seller"", 5],
+    [7, ""seller"", 7],
+    [8, ""leader"", 8]
+  ]
+}
+```"
+B05,licensed goods,1,quick,1.63,1,0,0.625,0,"wrong number of nodes (9 vs 8)","```json
+{
+  ""contract_name"": ""Licensed_Anime_Umbrella"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Designer"", ""Licensor"", ""Factory"", ""Seller""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Designer"", 2],
+    [3, ""Licensor"", 2],
+    [4, ""Factory"", 4],
+    [5, ""Factory"", 4],
+    [6, ""Seller"", 6],
+    [7, ""Seller"", 7],
+    [8, ""Licensor"", 8],
+    [9, ""Leader"", 9]
+  ]
+}
+```"
+B05,licensed goods,2,quick,3.00,1,0,0.625,0,"wrong number of nodes (9 vs 8)","```json
+{
+  ""contract_name"": ""Licensed_Anime_Umbrellas"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Designer"", ""Licensor"", ""Factory"", ""Seller""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Designer"", 2],
+    [3, ""Licensor"", 2],
+    [4, ""Factory"", 4],
+    [5, ""Factory"", 4],
+    [6, ""Seller"", 6],
+    [7, ""Seller"", 7],
+    [8, ""Licensor"", 8],
+    [9, ""Leader"", 9]
+  ]
+}
+```"
+B05,licensed goods,3,quick,1.67,1,0,0.500,0,"wrong number of nodes (9 vs 8)","```json
+{
+  ""contract_name"": ""Licensed_Anime_Umbrellas"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Designer"", ""Licensor"", ""Factory"", ""Seller""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Designer"", 2],
+    [3, ""Licensor"", 2],
+    [4, ""Factory"", 4],
+    [5, ""Factory"", 4],
+    [6, ""Seller"", 5],
+    [7, ""Seller"", 7],
+    [8, ""Licensor"", 8],
+    [9, ""Leader"", 9]
+  ]
+}
+```"
+B06,toys,1,quick,2.14,1,0,0.750,0,"wrong rollback at node 3","```json
+{""contract_name"": ""Wooden_Toys_Factory"", ""version"": ""Solidity ^0.4.22"", ""roles"": [""Leader"", ""Factory"", ""Tester""], ""node_matrix"": [[1, ""Leader"", 1], [2, ""Factory"", 2], [3, ""Tester"", 3], [4, ""Leader"", 4]]}
+```"
+B06,toys,2,quick,1.60,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Wooden_Toys_Factory"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Factory"", ""Tester""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Factory"", 2],
+    [3, ""Tester"", 2],
+    [4, ""Leader"", 4]
+  ]
+}
+```"
+B06,toys,3,quick,1.40,1,1,1.000,0,"","```json
+{""contract_name"": ""Wooden_Toys_Factory"", ""version"": ""Solidity ^0.4.22"", ""roles"": [""Leader"", ""Factory"", ""Tester""], ""node_matrix"": [[1, ""Leader"", 1], [2, ""Factory"", 2], [3, ""Tester"", 2], [4, ""Leader"", 4]]}
+```"
+B07,footwear,1,quick,2.48,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Limited_Edition_Sneakers"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Designer"", ""Supplier"", ""Factory"", ""Inspector"", ""Courier"", ""Seller""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Designer"", 2],
+    [3, ""Leader"", 2],
+    [4, ""Supplier"", 4],
+    [5, ""Factory"", 5],
+    [6, ""Inspector"", 5],
+    [7, ""Courier"", 7],
+    [8, ""Seller"", 7],
+    [9, ""Leader"", 9]
+  ]
+}
+```"
+B07,footwear,2,quick,1.82,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Limited_Edition_Sneakers"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Designer"", ""Supplier"", ""Factory"", ""Inspector"", ""Courier"", ""Seller""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Designer"", 2],
+    [3, ""Leader"", 2],
+    [4, ""Supplier"", 4],
+    [5, ""Factory"", 5],
+    [6, ""Inspector"", 5],
+    [7, ""Courier"", 7],
+    [8, ""Seller"", 7],
+    [9, ""Leader"", 9]
+  ]
+}
+```"
+B07,footwear,3,quick,1.81,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Limited_Edition_Sneakers"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Designer"", ""Supplier"", ""Factory"", ""Inspector"", ""Courier"", ""Seller""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Designer"", 2],
+    [3, ""Leader"", 2],
+    [4, ""Supplier"", 4],
+    [5, ""Factory"", 5],
+    [6, ""Inspector"", 5],
+    [7, ""Courier"", 7],
+    [8, ""Seller"", 7],
+    [9, ""Leader"", 9]
+  ]
+}
+```"
+B08,bicycles,1,quick,1.46,1,1,1.000,0,"","```json
+{""contract_name"": ""Custom_Bicycles"", ""version"": ""Solidity ^0.4.22"", ""roles"": [""Leader"", ""Welder"", ""Painter"", ""Assembler"", ""Tester"", ""Seller""], ""node_matrix"": [[1, ""Leader"", 1], [2, ""Welder"", 2], [3, ""Painter"", 3], [4, ""Assembler"", 4], [5, ""Tester"", 4], [6, ""Seller"", 6], [7, ""Leader"", 7]]}
+```"
+B08,bicycles,2,quick,1.56,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Custom_Bicycles"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""leader"", ""welder"", ""painter"", ""assembler"", ""tester"", ""seller""],
+  ""node_matrix"": [
+    [1, ""leader"", 1],
+    [2, ""welder"", 2],
+    [3, ""painter"", 3],
+    [4, ""assembler"", 4],
+    [5, ""tester"", 4],
+    [6, ""seller"", 6],
+    [7, ""leader"", 7]
+  ]
+}
+```"
+B08,bicycles,3,quick,1.49,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Custom_Bicycles"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""leader"", ""welder"", ""painter"", ""assembler"", ""tester"", ""seller""],
+  ""node_matrix"": [
+    [1, ""leader"", 1],
+    [2, ""welder"", 2],
+    [3, ""painter"", 3],
+    [4, ""assembler"", 4],
+    [5, ""tester"", 4],
+    [6, ""seller"", 6],
+    [7, ""leader"", 7]
+  ]
+}
+```"
+B09,accessories,1,quick,1.60,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Printed_Phone_Cases"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""leader"", ""designer"", ""printer"", ""seller""],
+  ""node_matrix"": [
+    [1, ""leader"", 1],
+    [2, ""designer"", 2],
+    [3, ""leader"", 2],
+    [4, ""printer"", 4],
+    [5, ""seller"", 4],
+    [6, ""seller"", 6],
+    [7, ""leader"", 7]
+  ]
+}
+```"
+B09,accessories,2,quick,1.59,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Printed_Phone_Cases"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""leader"", ""designer"", ""printer"", ""seller""],
+  ""node_matrix"": [
+    [1, ""leader"", 1],
+    [2, ""designer"", 2],
+    [3, ""leader"", 2],
+    [4, ""printer"", 4],
+    [5, ""seller"", 4],
+    [6, ""seller"", 6],
+    [7, ""leader"", 7]
+  ]
+}
+```"
+B09,accessories,3,quick,1.48,1,0,0.857,0,"wrong rollback at node 5","```json
+{""contract_name"": ""Printed_Phone_Cases"", ""version"": ""Solidity ^0.4.22"", ""roles"": [""Leader"", ""Designer"", ""Printer"", ""Seller""], ""node_matrix"": [[1, ""Leader"", 1], [2, ""Designer"", 2], [3, ""Leader"", 2], [4, ""Printer"", 4], [5, ""Seller"", 5], [6, ""Seller"", 6], [7, ""Leader"", 7]]}
+```"
+B10,food,1,quick,1.90,1,0,0.429,0,"wrong number of nodes (8 vs 7)","```json
+{
+  ""contract_name"": ""Specialty_Coffee_Lot"",
+  ""version"": ""Solitude ^0.4.22"",
+  ""roles"": [""Leader"", ""Farmer"", ""Roaster"", ""Taster"", ""Packer"", ""Seller""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Farmer"", 2],
+    [3, ""Roaster"", 3],
+    [4, ""Taster"", 4],
+    [5, ""Roaster"", 3],
+    [6, ""Packer"", 6],
+    [7, ""Seller"", 7],
+    [8, ""Leader"", 8]
+  ]
+}
+```"
+B10,food,2,quick,1.69,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Specialty_Coffee_Lot"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Farmer"", ""Roaster"", ""Taster"", ""Packer"", ""Seller""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Farmer"", 2],
+    [3, ""Roaster"", 3],
+    [4, ""Taster"", 3],
+    [5, ""Packer"", 5],
+    [6, ""Seller"", 6],
+    [7, ""Leader"", 7]
+  ]
+}
+```"
+B10,food,3,quick,1.60,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Specialty_Coffee_Lot"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Farmer"", ""Roaster"", ""Taster"", ""Packer"", ""Seller""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Farmer"", 2],
+    [3, ""Roaster"", 3],
+    [4, ""Taster"", 3],
+    [5, ""Packer"", 5],
+    [6, ""Seller"", 6],
+    [7, ""Leader"", 7]
+  ]
+}
+```"
+B11,publishing,1,quick,1.73,1,1,1.000,0,"","```json
+{""contract_name"": ""Book_Printing_Contract"", ""version"": ""Solidity ^0.4.22"", ""roles"": [""Leader"", ""Author"", ""Editor"", ""Printer"", ""Binder"", ""Distributor""], ""node_matrix"": [[1, ""Leader"", 1], [2, ""Author"", 2], [3, ""Editor"", 3], [4, ""Author"", 3], [5, ""Printer"", 5], [6, ""Binder"", 6], [7, ""Distributor"", 7], [8, ""Leader"", 8]]}
+```"
+B11,publishing,2,quick,2.64,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Book_Printing_Contract"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""leader"", ""author"", ""editor"", ""printer"", ""binder"", ""distributor""],
+  ""node_matrix"": [
+    [1, ""leader"", 1],
+    [2, ""author"", 2],
+    [3, ""editor"", 3],
+    [4, ""author"", 3],
+    [5, ""printer"", 5],
+    [6, ""binder"", 6],
+    [7, ""distributor"", 7],
+    [8, ""leader"", 8]
+  ]
+}
+```"
+B11,publishing,3,quick,1.62,1,0,0.375,0,"wrong number of nodes (9 vs 8)","```json
+{""contract_name"": ""Book_Printing"", ""version"": ""Solidity ^0.4.22"", ""roles"": [""Leader"", ""Author"", ""Editor"", ""Printer"", ""Binder"", ""Distributor""], ""node_matrix"": [[1, ""Leader"", 1], [2, ""Author"", 2], [3, ""Editor"", 3], [4, ""Editor"", 3], [5, ""Author"", 4], [6, ""Printer"", 6], [7, ""Binder"", 7], [8, ""Distributor"", 8], [9, ""Leader"", 9]]}
+```"
+B12,jewelry,1,quick,1.54,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Custom_Ring_Factory"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Designer"", ""Jeweler"", ""Appraiser"", ""Seller""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Designer"", 2],
+    [3, ""Leader"", 2],
+    [4, ""Jeweler"", 4],
+    [5, ""Appraiser"", 4],
+    [6, ""Seller"", 6],
+    [7, ""Leader"", 7]
+  ]
+}
+```"
+B12,jewelry,2,quick,1.63,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Custom_Ring_Factory"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""leader"", ""designer"", ""jeweler"", ""appraiser"", ""seller""],
+  ""node_matrix"": [
+    [1, ""leader"", 1],
+    [2, ""designer"", 2],
+    [3, ""leader"", 2],
+    [4, ""jeweler"", 4],
+    [5, ""appraiser"", 4],
+    [6, ""seller"", 6],
+    [7, ""leader"", 7]
+  ]
+}
+```"
+B12,jewelry,3,quick,1.58,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Custom_Ring_Factory"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Designer"", ""Jeweler"", ""Appraiser"", ""Seller""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Designer"", 2],
+    [3, ""Leader"", 2],
+    [4, ""Jeweler"", 4],
+    [5, ""Appraiser"", 4],
+    [6, ""Seller"", 6],
+    [7, ""Leader"", 7]
+  ]
+}
+```"
+B13,drones,1,quick,1.73,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Agricultural_Drones_Factory"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Designer"", ""Supplier"", ""Machinist"", ""Assembler"", ""Programmer"", ""Tester"", ""Seller""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Designer"", 2],
+    [3, ""Leader"", 2],
+    [4, ""Supplier"", 4],
+    [5, ""Machinist"", 5],
+    [6, ""Assembler"", 6],
+    [7, ""Programmer"", 7],
+    [8, ""Tester"", 7],
+    [9, ""Seller"", 9],
+    [10, ""Leader"", 10]
+  ]
+}
+```"
+B13,drones,2,quick,1.70,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Agricultural_Drones_Factory"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Designer"", ""Supplier"", ""Machinist"", ""Assembler"", ""Programmer"", ""Tester"", ""Seller""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Designer"", 2],
+    [3, ""Leader"", 2],
+    [4, ""Supplier"", 4],
+    [5, ""Machinist"", 5],
+    [6, ""Assembler"", 6],
+    [7, ""Programmer"", 7],
+    [8, ""Tester"", 7],
+    [9, ""Seller"", 9],
+    [10, ""Leader"", 10]
+  ]
+}
+```"
+B13,drones,3,quick,2.16,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Agricultural_Drones_Factory"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Designer"", ""Supplier"", ""Machinist"", ""Assembler"", ""Programmer"", ""Tester"", ""Seller""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Designer"", 2],
+    [3, ""Leader"", 2],
+    [4, ""Supplier"", 4],
+    [5, ""Machinist"", 5],
+    [6, ""Assembler"", 6],
+    [7, ""Programmer"", 7],
+    [8, ""Tester"", 7],
+    [9, ""Seller"", 9],
+    [10, ""Leader"", 10]
+  ]
+}
+```"
+B14,cosmetics,1,quick,1.74,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Skincare_Products_Factory"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""leader"", ""designer"", ""printer"", ""filler"", ""inspector"", ""seller""],
+  ""node_matrix"": [
+    [1, ""leader"", 1],
+    [2, ""designer"", 2],
+    [3, ""leader"", 2],
+    [4, ""printer"", 4],
+    [5, ""filler"", 5],
+    [6, ""inspector"", 5],
+    [7, ""seller"", 7],
+    [8, ""leader"", 8]
+  ]
+}
+```"
+B14,cosmetics,2,quick,1.62,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Skincare_Products_Line"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""leader"", ""designer"", ""printer"", ""filler"", ""inspector"", ""seller""],
+  ""node_matrix"": [
+    [1, ""leader"", 1],
+    [2, ""designer"", 2],
+    [3, ""leader"", 2],
+    [4, ""printer"", 4],
+    [5, ""filler"", 5],
+    [6, ""inspector"", 5],
+    [7, ""seller"", 7],
+    [8, ""leader"", 8]
+  ]
+}
+```"
+B14,cosmetics,3,quick,1.54,1,1,1.000,0,"","```json
+{""contract_name"": ""Skincare_Products_Contract"", ""version"": ""Solidity ^0.4.22"", ""roles"": [""Leader"", ""Designer"", ""Printer"", ""Filler"", ""Inspector"", ""Seller""], ""node_matrix"": [[1, ""Leader"", 1], [2, ""Designer"", 2], [3, ""Leader"", 2], [4, ""Printer"", 4], [5, ""Filler"", 5], [6, ""Inspector"", 5], [7, ""Seller"", 7], [8, ""Leader"", 8]]}
+```"
+B15,energy,1,quick,1.84,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Rooftop_Solar_Project"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Supplier"", ""Cutter"", ""Assembler"", ""Laminator"", ""Tester"", ""Installer"", ""Inspector""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Supplier"", 2],
+    [3, ""Cutter"", 3],
+    [4, ""Assembler"", 4],
+    [5, ""Laminator"", 5],
+    [6, ""Tester"", 5],
+    [7, ""Installer"", 7],
+    [8, ""Inspector"", 7],
+    [9, ""Installer"", 9],
+    [10, ""Leader"", 10]
+  ]
+}
+```"
+B15,energy,2,quick,1.75,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Rooftop_Solar_Project"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Supplier"", ""Cutter"", ""Assembler"", ""Laminator"", ""Tester"", ""Installer"", ""Inspector""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Supplier"", 2],
+    [3, ""Cutter"", 3],
+    [4, ""Assembler"", 4],
+    [5, ""Laminator"", 5],
+    [6, ""Tester"", 5],
+    [7, ""Installer"", 7],
+    [8, ""Inspector"", 7],
+    [9, ""Installer"", 9],
+    [10, ""Leader"", 10]
+  ]
+}
+```"
+B15,energy,3,quick,1.92,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Rooftop_Solar_Project"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Supplier"", ""Cutter"", ""Assembler"", ""Laminator"", ""Tester"", ""Installer"", ""Inspector""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Supplier"", 2],
+    [3, ""Cutter"", 3],
+    [4, ""Assembler"", 4],
+    [5, ""Laminator"", 5],
+    [6, ""Tester"", 5],
+    [7, ""Installer"", 7],
+    [8, ""Inspector"", 7],
+    [9, ""Installer"", 9],
+    [10, ""Leader"", 10]
+  ]
+}
+```"
+B16,apparel,1,quick,1.91,1,0,0.000,0,"wrong number of nodes (11 vs 12)","```json
+{
+  ""contract_name"": ""Embroidered_Jackets_Factory"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Designer"", ""Supplier"", ""Cutter"", ""Sewer"", ""Embroiderer"", ""Inspector"", ""Courier"", ""Seller""],
+  ""node_matrix"": [
+    [1, ""Designer"", 1],
+    [2, ""Leader"", 2],
+    [3, ""Supplier"", 3],
+    [4, ""Cutter"", 4],
+    [5, ""Cutter"", 5],
+    [6, ""Sewer"", 6],
+    [7, ""Embroiderer"", 7],
+    [8, ""Inspector"", 8],
+    [9, ""Courier"", 9],
+    [10, ""Seller"", 10],
+    [11, ""Leader"", 11]
+  ]
+}
+```"
+B16,apparel,2,quick,2.10,1,0,0.000,0,"wrong number of nodes (11 vs 12)","```json
+{
+  ""contract_name"": ""Embroidered_Jackets_Factory"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Designer"", ""Supplier"", ""Cutter"", ""Sewer"", ""Embroiderer"", ""Inspector"", ""Courier"", ""Seller""],
+  ""node_matrix"": [
+    [1, ""Designer"", 1],
+    [2, ""Leader"", 2],
+    [3, ""Supplier"", 3],
+    [4, ""Cutter"", 4],
+    [5, ""Cutter"", 5],
+    [6, ""Sewer"", 6],
+    [7, ""Embroiderer"", 7],
+    [8, ""Inspector"", 8],
+    [9, ""Courier"", 9],
+    [10, ""Seller"", 10],
+    [11, ""Leader"", 11]
+  ]
+}
+```"
+B16,apparel,3,quick,2.09,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Embroidered_Jackets_Factory"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Designer"", ""Supplier"", ""Cutter"", ""Sewer"", ""Embroiderer"", ""Inspector"", ""Courier"", ""Seller""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Designer"", 2],
+    [3, ""Leader"", 2],
+    [4, ""Supplier"", 4],
+    [5, ""Cutter"", 4],
+    [6, ""Cutter"", 6],
+    [7, ""Sewer"", 7],
+    [8, ""Embroiderer"", 8],
+    [9, ""Inspector"", 7],
+    [10, ""Courier"", 10],
+    [11, ""Seller"", 11],
+    [12, ""Leader"", 12]
+  ]
+}
+```"
+B17,medical supplies,1,quick,1.58,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Medical_Masks_Factory"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Supplier"", ""Factory"", ""Sterilizer"", ""Inspector""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Supplier"", 2],
+    [3, ""Factory"", 3],
+    [4, ""Sterilizer"", 4],
+    [5, ""Inspector"", 4],
+    [6, ""Leader"", 6]
+  ]
+}
+```"
+B17,medical supplies,2,quick,1.97,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Medical_Masks_Factory"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Supplier"", ""Factory"", ""Sterilizer"", ""Inspector""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Supplier"", 2],
+    [3, ""Factory"", 3],
+    [4, ""Sterilizer"", 4],
+    [5, ""Inspector"", 4],
+    [6, ""Leader"", 6]
+  ]
+}
+```"
+B17,medical supplies,3,quick,1.37,1,1,1.000,0,"","```json
+{""contract_name"": ""Medical_Masks_Factory"", ""version"": ""Solidity ^0.4.22"", ""roles"": [""Leader"", ""Supplier"", ""Factory"", ""Sterilizer"", ""Inspector""], ""node_matrix"": [[1, ""Leader"", 1], [2, ""Supplier"", 2], [3, ""Factory"", 3], [4, ""Sterilizer"", 4], [5, ""Inspector"", 4], [6, ""Leader"", 6]]}
+```"
+B18,additive manufacturing,1,quick,2.21,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""3D_Printed_Brackets"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""leader"", ""engineer"", ""printer"", ""inspector""],
+  ""node_matrix"": [
+    [1, ""leader"", 1],
+    [2, ""engineer"", 2],
+    [3, ""printer"", 3],
+    [4, ""inspector"", 2],
+    [5, ""leader"", 5]
+  ]
+}
+```"
+B18,additive manufacturing,2,quick,2.00,1,0,0.600,0,"wrong number of nodes (6 vs 5)","```json
+{
+  ""contract_name"": ""3D_Printed_Brackets"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""leader"", ""engineer"", ""printer"", ""inspector""],
+  ""node_matrix"": [
+    [1, ""leader"", 1],
+    [2, ""engineer"", 2],
+    [3, ""printer"", 3],
+    [4, ""inspector"", 4],
+    [5, ""engineer"", 2],
+    [6, ""leader"", 6]
+  ]
+}
+```"
+B18,additive manufacturing,3,quick,1.24,1,0,0.800,0,"wrong rollback at node 4","```json
+{""contract_name"": ""3D_Printed_Brackets"", ""version"": ""Solidity ^0.4.22"", ""roles"": [""leader"", ""engineer"", ""printer"", ""inspector""], ""node_matrix"": [[1, ""leader"", 1], [2, ""engineer"", 2], [3, ""printer"", 3], [4, ""inspector"", 4], [5, ""leader"", 5]]}
+```"
+B19,beverages,1,quick,2.00,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Private_Label_Wine"",
+  ""version"": ""Solutil ^0.4.22"",
+  ""roles"": [""Leader"", ""Grower"", ""Winemaker"", ""Sommelier"", ""Bottler"", ""Labeler"", ""Distributor""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Grower"", 2],
+    [3, ""Winemaker"", 3],
+    [4, ""Sommelier"", 3],
+    [5, ""Bottler"", 5],
+    [6, ""Labeler"", 6],
+    [7, ""Distributor"", 7],
+    [8, ""Sommelier"", 7],
+    [9, ""Leader"", 9]
+  ]
+}
+```"
+B19,beverages,2,quick,1.89,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Private_Label_Wine"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Grower"", ""Winemaker"", ""Sommelier"", ""Bottler"", ""Labeler"", ""Distributor""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Grower"", 2],
+    [3, ""Winemaker"", 3],
+    [4, ""Sommelier"", 3],
+    [5, ""Bottler"", 5],
+    [6, ""Labeler"", 6],
+    [7, ""Distributor"", 7],
+    [8, ""Sommelier"", 7],
+    [9, ""Leader"", 9]
+  ]
+}
+```"
+B19,beverages,3,quick,1.85,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Private_Label_Wine"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Grower"", ""Winemaker"", ""Sommelier"", ""Bottler"", ""Labeler"", ""Distributor""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Grower"", 2],
+    [3, ""Winemaker"", 3],
+    [4, ""Sommelier"", 3],
+    [5, ""Bottler"", 5],
+    [6, ""Labeler"", 6],
+    [7, ""Distributor"", 7],
+    [8, ""Sommelier"", 7],
+    [9, ""Leader"", 9]
+  ]
+}
+```"
+B20,automotive,1,quick,1.90,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Custom_Car_Seat_Covers"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Designer"", ""Supplier"", ""Cutter"", ""Sewer"", ""Inspector"", ""Packer"", ""Seller""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Designer"", 2],
+    [3, ""Leader"", 2],
+    [4, ""Supplier"", 4],
+    [5, ""Cutter"", 5],
+    [6, ""Sewer"", 6],
+    [7, ""Inspector"", 5],
+    [8, ""Packer"", 8],
+    [9, ""Seller"", 8],
+    [10, ""Seller"", 10],
+    [11, ""Leader"", 11]
+  ]
+}
+```"
+B20,automotive,2,quick,2.29,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Custom_Car_Seat_Covers"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Designer"", ""Supplier"", ""Cutter"", ""Sewer"", ""Inspector"", ""Packer"", ""Seller""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Designer"", 2],
+    [3, ""Leader"", 2],
+    [4, ""Supplier"", 4],
+    [5, ""Cutter"", 5],
+    [6, ""Sewer"", 6],
+    [7, ""Inspector"", 5],
+    [8, ""Packer"", 8],
+    [9, ""Seller"", 8],
+    [10, ""Seller"", 10],
+    [11, ""Leader"", 11]
+  ]
+}
+```"
+B20,automotive,3,quick,1.85,1,1,1.000,0,"","```json
+{
+  ""contract_name"": ""Custom_Car_Seat_Covers"",
+  ""version"": ""Solidity ^0.4.22"",
+  ""roles"": [""Leader"", ""Designer"", ""Supplier"", ""Cutter"", ""Sewer"", ""Inspector"", ""Packer"", ""Seller""],
+  ""node_matrix"": [
+    [1, ""Leader"", 1],
+    [2, ""Designer"", 2],
+    [3, ""Leader"", 2],
+    [4, ""Supplier"", 4],
+    [5, ""Cutter"", 5],
+    [6, ""Sewer"", 6],
+    [7, ""Inspector"", 5],
+    [8, ""Packer"", 8],
+    [9, ""Seller"", 8],
+    [10, ""Seller"", 10],
+    [11, ""Leader"", 11]
+  ]
+}
+```"
