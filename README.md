@@ -4,6 +4,10 @@ The framework generates executable Ethereum smart contract code based on structu
 All operations are executed through `CodeGenerate.m`.  
 Other MATLAB scripts are automatically invoked as functional sub-modules.
 
+Evaluation of LLM-based Workflow Extraction: The \emph{normal set} involves 3--9 roles (5.9 on average) and 4--12 task nodes per description. The \emph{complex set} involves 10--20 roles (15.0 on average) and 11--24 task nodes per description, with more rollback rules, rollbacks that skip over intermediate nodes, and roles acting at several nodes. Both sets use the same sentence structure, so they differ only in the scale of the process.
+
+
+
 ## Repository Structure
 `CodeGenerate.m` Main MATLAB entry file
 
