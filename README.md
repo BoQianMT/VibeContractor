@@ -5,7 +5,9 @@ All operations are executed through `CodeGenerate.m`.
 Other MATLAB scripts are automatically invoked as functional sub-modules.
 
 # Evaluation of LLM-based Workflow Extraction 
-The normal set involves 3-9 roles (5.9 on average) and 4-12 task nodes per description. The complex set involves 10-20 roles (15.0 on average) and 11-24 task nodes per description, with more rollback rules, rollbacks that skip over intermediate nodes, and roles acting at several nodes. Both sets use the same sentence structure, so they differ only in the scale of the process. We evaluated three model tiers of Claude, namely the fastest, the balanced, and the most capable tier, which differ in model capability and reasoning depth. Each description was sent to each tier with a designed prompt as an independent request without caching, and the benchmark was repeated three times, giving 360 requests in total. Besides parsing success, exact match, and rollback accuracy, we report the hallucination rate (replies containing a task node, role, or fixed field not supported by the input) and the omission rate (replies missing at least one ground-truth node).
+The normal set involves 3-9 roles (5.9 on average) and 4-12 task nodes per description. The complex set involves 10-20 roles (15.0 on average) and 11-24 task nodes per description, with more rollback rules, rollbacks that skip over intermediate nodes, and roles acting at several nodes. Both sets use the same sentence structure, so they differ only in the scale of the process. 
+We evaluated three model tiers of Claude, namely the fastest, the balanced, and the most capable tier, which differ in model capability and reasoning depth. Each description was sent to each tier with a designed prompt as an independent request without caching, and the benchmark was repeated three times, giving 360 requests in total. 
+Besides parsing success, exact match, and rollback accuracy, we report the hallucination rate (replies containing a task node, role, or fixed field not supported by the input) and the omission rate (replies missing at least one ground-truth node).
 
 ## Repository Structure
 `CodeGenerate.m` Main MATLAB entry file
